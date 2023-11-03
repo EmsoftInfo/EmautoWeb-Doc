@@ -1,9 +1,9 @@
 ![EMAUTO Web](https://www.emsoft.inf.br/wp-content/uploads/2018/08/logo_horizontal_160x40.png)
 # Documentação EMAutoWeb
-## Configuração Inicial.
 
 
-## Documentação - Configuração do Ambiente
+
+## Configuração do Ambiente
 
 Este guia fornece instruções para configurar o ambiente necessário para executar o sistema web em sua máquina. Certifique-se de seguir os passos abaixo para garantir que todas as dependências estejam devidamente instaladas.
 
