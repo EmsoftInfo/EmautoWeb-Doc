@@ -1,152 +1,69 @@
 ![EMAUTO Web](https://www.emsoft.inf.br/wp-content/uploads/2018/08/logo_horizontal_160x40.png)
 # Documentação EMAutoWeb
-## Introdução.
-
-O EMAutoWeb é mais do que apenas um sistema; é a próxima evolução na gestão de autopeças e serviços automotivos. Anteriormente disponível apenas como um sistema desktop, agora estamos levando esse poderoso ERP (Enterprise Resource Planning) para o mundo da web, tornando-o mais acessível, ágil e amigável.
-
-O EMAutoWeb é um sistema especialmente projetado para atender às necessidades de negócios no setor de autopeças. Sua funcionalidade abrangente cobre todos os aspectos da gestão, desde o controle de estoque e vendas até a gestão financeira, proporcionando um fluxo de trabalho eficiente e uma visão abrangente do seu negócio. 
-
-O que diferencia o EMAutoWeb é o compromisso com o suporte ao cliente de maneira verdadeiramente humanizada. Valorizamos cada cliente e estamos empenhados em fornecer assistência personalizada para garantir que você aproveite ao máximo o sistema. Não apenas vendemos um software, mas também construímos relacionamentos duradouros com nossos clientes.
-
-Embora inicialmente tenhamos concentrado nossos esforços no Rio de Janeiro, a versão web do EMAutoWeb permitirá que autopeças de todo o Brasil e além tenham acesso a essa ferramenta poderosa. Estamos comprometidos em fornecer uma solução que não apenas melhore a eficiência dos negócios, mas também eleve a experiência do usuário a um novo patamar.
-
-Com a adaptação para a versão web, o EMAutoWeb está pronto para revolucionar a forma como o setor de autopeças gerencia seus negócios. Seja bem-vindo à nova era da gestão de autopeças, onde eficiência, acessibilidade e suporte humanizado se encontram.
-
-### Objetivos
-O EMAutoWeb tem como objetivo simplificar e otimizar a gestão de negócios no setor de autopeças por meio de uma plataforma web acessível, proporcionando aos usuários uma maneira eficiente de gerenciar estoque, vendas, finanças e outras operações essenciais.
+## Configuração Inicial.
 
 
-### Características
-<pre> 
-Linguagens de Programação Utilizadas: PHP e JavaScript
-Bibliotecas e Frameworks: Jquey, BootStrap e Ionicons
+## Documentação - Configuração do Ambiente
 
-Requisitos para utilização:
-Apache HTTP Server
-PHP 8.1+
-Navegadores com suporte ao ECMAScript 6
-</pre>
+Este guia fornece instruções para configurar o ambiente necessário para executar o sistema web em sua máquina. Certifique-se de seguir os passos abaixo para garantir que todas as dependências estejam devidamente instaladas.
 
-## Arquitetura
+### Pré-Requisitos
 
+Antes de iniciar a configuração, verifique se sua máquina atende aos seguintes pré-requisitos:
 
-### Estrutura de Pastas:
+- Apache (Web Server) instalado.
+- PHP 8.2 instalado.
+- Navegador da web com suporte ao ECMAScript 6.
 
-Estrutura de Pastas do Projeto ERP*
+### Instalação do Apache
 
-*Diretório Inicial:*
-<pre>
-- `app`: Este diretório contém a lógica do lado do servidor do aplicativo ERP.
-- `public`: Este diretório contém ativos e recursos acessíveis diretamente pelo navegador.
-</pre>
-*Arquivos:*
-<pre>
-- `index.php`: Este arquivo é a entrada principal do aplicativo ERP e é responsável por iniciar o aplicativo.
-- `autoload.php`: Este arquivo é usado para carregar automaticamente classes e recursos do aplicativo.
-</pre>
-*Pasta `public`:*
-- `css`: Contém arquivos de estilo (CSS) usados para estilizar as páginas do aplicativo.
-- `js`: Contém arquivos JavaScript usados para funcionalidades dinâmicas no aplicativo.
-- `midia`: Possui recursos de mídia, como imagens e vídeos, usados no aplicativo.
-- `pages`: Contém páginas do aplicativo acessadas diretamente pelos usuários.
-- `template`: Armazena templates ou layouts usados para renderizar as páginas do aplicativo.
+Certifique-se de que o Apache esteja instalado e configurado em sua máquina. Você pode fazer o download do Apache no [site oficial do Apache](https://httpd.apache.org/download.cgi). Certifique-se de configurar o Apache para servir os arquivos do seu sistema web.
 
-*Pasta `app`:*
-- `classes`: Este diretório contém classes PHP que implementam a lógica de negócios do aplicativo ERP.
-- `config`: Armazena arquivos de configuração que definem variáveis de ambiente e configurações do aplicativo.
-- `controles`: Contém scripts ou classes que atuam como controladores, gerenciando as interações entre as páginas e a lógica de negócios.
-- `includes`: Guarda arquivos que são incluídos em várias partes do aplicativo para reutilização de código.
-- `temp`: Pode ser usado para armazenar arquivos temporários ou caches usados pelo aplicativo.
+### Instalação do PHP 8.2
 
-### Arquitetura utilizada
+Certifique-se de que o PHP 8.2 esteja instalado e configurado em sua máquina. Você pode fazer o download do PHP 8.2 em [php.net](https://www.php.net/downloads.php). Verifique se o PHP está corretamente configurado no Apache para executar scripts PHP.
 
-Arquitetura Modular e Hierárquica - Documentação Técnica*
+### Navegador com Suporte ao ECMAScript 6
 
-*1. Visão Geral:*
+Certifique-se de que você esteja usando um navegador da web atualizado que ofereça suporte ao ECMAScript 6 (ES6), uma versão avançada do JavaScript. A maioria dos navegadores modernos, como Google Chrome, Mozilla Firefox, Microsoft Edge e outros, oferece suporte ao ECMAScript 6.
 
-A arquitetura "Modular e Hierárquica" é a base da estrutura do projeto ERP. Ela enfatiza a organização e a divisão eficaz das responsabilidades em um ambiente de desenvolvimento web. Embora não se enquadre em um padrão de projeto específico, essa arquitetura oferece flexibilidade, escalabilidade e reutilização de código.
+### Verificação da Configuração
 
-*2. Principais Componentes:*
+Para verificar se o ambiente foi configurado corretamente, siga os passos a seguir:
 
-- *Páginas (Pages)*: As páginas da interface do usuário são a face visível do aplicativo e estão contidas no diretório `public/pages`. Elas são compostas dinamicamente com base nas necessidades do usuário.
+1. Inicie o Apache.
+2. Coloque os arquivos do sistema web em um diretório acessível pelo Apache.
+3. Abra seu navegador da web e acesse o sistema web.
 
-- *Classes de Lógica (Logic Classes)*: As classes PHP em `app/classes` implementam a lógica de negócios do ERP. Cada classe tem uma única responsabilidade bem definida, promovendo a reutilização de código.
+Se o sistema web for carregado com sucesso e funcionar corretamente no seu navegador, significa que a configuração do ambiente foi realizada com êxito.
 
-- *Controladores (Controllers)*: Os controladores no diretório `app/controles` atuam como intermediários entre as páginas da interface do usuário e as classes de lógica de negócios. Eles gerenciam as interações e as solicitações entre essas partes.
+Lembre-se de que é fundamental seguir as melhores práticas de segurança, como configurar senhas seguras para o Apache e o PHP, e aplicar as atualizações de segurança necessárias em seu sistema web.
 
-- *Recursos Públicos (Public Resources)*: Os recursos acessíveis diretamente pelo navegador, como arquivos CSS, JavaScript e mídia, são mantidos em `public/css`, `public/js` e `public/midia`, respectivamente.
-
-*3. Funcionamento Geral:*
-
-- *Inclusões de Página*: O arquivo `index.php` atua como o ponto de entrada. Inicialmente, chama a página de login e, após o login bem-sucedido, redireciona para a página inicial. As inclusões de página são feitas por meio do comando `include`.
-
-- *Controle de Acesso*: O controle de acesso é implementado para garantir que os usuários autorizados acessem as páginas corretas. A classe `VerificaPages` em `app/classes/VerificaPages.php` gerencia o controle de acesso.
-
-- *Composição de Páginas*: As páginas são compostas dinamicamente, com a lógica da classe `VerificaPages` determinando as informações, cores, títulos e conteúdo a serem exibidos.
-
-- *Interação AJAX*: O JavaScript em `public/js` é usado para manipular o DOM e para interações AJAX, permitindo atualizações dinâmicas da interface do usuário.
-
-- *Requisições API*: A classe `RequisicoesAPI` é responsável por tratar as solicitações da API. Ela recebe solicitações de outras classes e arquivos, processa-as e retorna resultados.
-
-- *Componentes de Interface*: Elementos da interface, como formulários, modais e colapsos, são requisitados pela classe `VerificaPages`, que busca por esses componentes na pasta `includes` em `app`.
-
-*4. Benefícios:*
-
-- *Organização Eficiente*: A arquitetura modular facilita a organização e a manutenção do código.
-
-- *Reutilização de Código*: O uso de classes e componentes promove a reutilização de código, reduzindo a duplicação.
-
-- *Flexibilidade na Interface*: A composição dinâmica das páginas permite uma interface flexível e personalizável.
-
-- *Segurança*: O controle de acesso e a autenticação são implementados para garantir a segurança do aplicativo.
+Com o ambiente configurado, você estará pronto para executar e testar seu sistema web em sua máquina local.
 
 
-### Lógica
 
-*Lógica do Projeto ERP - Documentação Técnica*
+## Configuração do Sistema para Clientes
 
-*1. Fluxo Inicial:*
+Para configurar o sistema para cada cliente, siga os passos a seguir:
 
-O sistema ERP segue um fluxo inicial a partir do arquivo `index.php`, que é o ponto de entrada principal do aplicativo. O fluxo é o seguinte:
+1. Acesse a pasta `system` do projeto.
 
-- Quando o usuário não fez login, o `index.php` verifica e chama a página de login, que está localizada em `public/pages/login.php`. O acesso direto à página é evitado, e a inclusão da página é realizada via PHP (`include`).
+2. Navegue até `system/app/config` e abra o arquivo `config.php`.
 
-*2. Página de Login:*
+3. Dentro do arquivo `config.php`, localize a seção de configuração do IP do cliente.
 
-- A página de login apresenta um formulário onde o usuário fornece suas credenciais (como nome de usuário e senha).
-- O JavaScript pode ser usado para validar as entradas do usuário e enviar uma solicitação AJAX para o servidor.
-- No lado do servidor, a lógica de login verifica as credenciais, autentica o usuário e cria uma sessão ou token de autenticação.
-- Após o login bem-sucedido, o usuário é redirecionado para a página inicial.
+4. Altere o IP do cliente conforme necessário.
 
-*3. Página Inicial (Home):*
+5. Salve o arquivo `config.php`.
 
-- A página inicial (`public/pages/home.php`) é a primeira página após o login.
-- Ela contém chamadas AJAX em JavaScript para incluir o menu lateral e o topo da página.
-- O menu lateral lista todas as rotas das páginas, mas o acesso direto a elas é desencorajado. Em vez disso, o menu envia uma solicitação GET para o `index.php`, indicando a página desejada.
-- O arquivo `index.php` chama a classe `VerificaPages` localizada em `app/classes/VerificaPages.php` para determinar se a página solicitada existe.
+6. Reinicie o sistema para aplicar as novas configurações.
 
-*4. Verificação e Montagem de Páginas:*
+7. Após a reinicialização, faça o primeiro acesso ao sistema.
 
-- A classe `VerificaPages` é responsável por verificar a existência da página e fornecer informações, como cores, título e conteúdo da página.
-- O `index.php` lê as informações retornadas pela classe e monta a página para o cliente.
-- Os arquivos JavaScript em `public/js` são responsáveis por manipulações no DOM e na interface do usuário à medida que o usuário interage com a página.
+8. Use um usuário master ou administrador para configurar os usuários e níveis de acesso de acordo com as necessidades do cliente.
 
-*5. Solicitações da API:*
-
-- Os dados são recebidos via API. Uma classe chamada `RequisicoesAPI` é responsável por tratar todas as solicitações de outras classes e arquivos.
-- Ela retorna os resultados obtidos após processar as solicitações.
-
-*6. Acesso a Novas Páginas:*
-
-- Ao acessar uma nova página, uma solicitação AJAX é feita ao arquivo `tabelas.php`, localizado em `app/controles/`.
-- O arquivo `tabelas.php` faz uma solicitação à classe `RequisicoesAPI`.
-- Após o sucesso da solicitação, `tabelas.php` retorna os resultados para a solicitação AJAX, que os apresenta na tela.
-
-*7. Elementos da Tela:*
-
-- Formulários, modais, collapses e outros elementos da interface são requisitados pela classe `VerificaPages`.
-- A classe procura pelos elementos na pasta `includes`, que está dentro do diretório `app`.
-- Se o arquivo for encontrado, a classe retorna o resultado para a exibição na tela.
+Isso garantirá que o sistema esteja configurado corretamente e personalizado para atender às especificações de cada cliente.
 
 
 
