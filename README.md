@@ -16,7 +16,8 @@ Com a adaptação para a versão web, o EMAutoWeb está pronto para revolucionar
 O EMAutoWeb tem como objetivo simplificar e otimizar a gestão de negócios no setor de autopeças por meio de uma plataforma web acessível, proporcionando aos usuários uma maneira eficiente de gerenciar estoque, vendas, finanças e outras operações essenciais.
 
 
-### Características 
+### Características
+<pre> 
 Linguagens de Programação Utilizadas: PHP e JavaScript
 Bibliotecas e Frameworks: Jquey, BootStrap e Ionicons
 
@@ -24,7 +25,7 @@ Requisitos para utilização:
 Apache HTTP Server
 PHP 8.1+
 Navegadores com suporte ao ECMAScript 6
-
+</pre>
 
 ## Arquitetura
 
@@ -34,13 +35,15 @@ Navegadores com suporte ao ECMAScript 6
 Estrutura de Pastas do Projeto ERP*
 
 *Diretório Inicial:*
+<pre>
 - `app`: Este diretório contém a lógica do lado do servidor do aplicativo ERP.
 - `public`: Este diretório contém ativos e recursos acessíveis diretamente pelo navegador.
-
+</pre>
 *Arquivos:*
+<pre>
 - `index.php`: Este arquivo é a entrada principal do aplicativo ERP e é responsável por iniciar o aplicativo.
 - `autoload.php`: Este arquivo é usado para carregar automaticamente classes e recursos do aplicativo.
-
+</pre>
 *Pasta `public`:*
 - `css`: Contém arquivos de estilo (CSS) usados para estilizar as páginas do aplicativo.
 - `js`: Contém arquivos JavaScript usados para funcionalidades dinâmicas no aplicativo.
