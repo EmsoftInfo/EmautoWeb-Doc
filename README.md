@@ -1,5 +1,6 @@
+![EMAUTO Web](https://www.emsoft.inf.br/wp-content/uploads/2018/08/logo_horizontal_208x52_orange.png)
 # Documentação EMAutoWeb
-Documentação Técnica do Sistema EMAutoWeb.
+## Documentação Técnica do Sistema EMAutoWeb.
 
 O EMAutoWeb é mais do que apenas um sistema; é a próxima evolução na gestão de autopeças e serviços automotivos. Anteriormente disponível apenas como um sistema desktop, agora estamos levando esse poderoso ERP (Enterprise Resource Planning) para o mundo da web, tornando-o mais acessível, ágil e amigável.
 
@@ -10,4 +11,18 @@ O que diferencia o EMAutoWeb é o compromisso com o suporte ao cliente de maneir
 Embora inicialmente tenhamos concentrado nossos esforços no Rio de Janeiro, a versão web do EMAutoWeb permitirá que autopeças de todo o Brasil e além tenham acesso a essa ferramenta poderosa. Estamos comprometidos em fornecer uma solução que não apenas melhore a eficiência dos negócios, mas também eleve a experiência do usuário a um novo patamar.
 
 Com a adaptação para a versão web, o EMAutoWeb está pronto para revolucionar a forma como o setor de autopeças gerencia seus negócios. Seja bem-vindo à nova era da gestão de autopeças, onde eficiência, acessibilidade e suporte humanizado se encontram.
+
+
+### Atalhos
+
+
+
+### Objetivos
+O EMAutoWeb tem como objetivo simplificar e otimizar a gestão de negócios no setor de autopeças por meio de uma plataforma web acessível, proporcionando aos usuários uma maneira eficiente de gerenciar estoque, vendas, finanças e outras operações essenciais.
+
+### Estrutura 
+
+
+
+
 
