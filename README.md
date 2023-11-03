@@ -132,7 +132,6 @@ O sistema ERP segue um fluxo inicial a partir do arquivo `index.php`, que é o p
 
 - Os dados são recebidos via API. Uma classe chamada `RequisicoesAPI` é responsável por tratar todas as solicitações de outras classes e arquivos.
 - Ela retorna os resultados obtidos após processar as solicitações.
-- A classe `VerificaPages` é responsável por páginas que exibem tabelas com dados obtidos da API.
 
 *6. Acesso a Novas Páginas:*
 
@@ -145,7 +144,6 @@ O sistema ERP segue um fluxo inicial a partir do arquivo `index.php`, que é o p
 - Formulários, modais, collapses e outros elementos da interface são requisitados pela classe `VerificaPages`.
 - A classe procura pelos elementos na pasta `includes`, que está dentro do diretório `app`.
 - Se o arquivo for encontrado, a classe retorna o resultado para a exibição na tela.
-
 
 
 
