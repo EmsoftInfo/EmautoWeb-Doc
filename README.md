@@ -97,17 +97,54 @@ A arquitetura "Modular e Hierárquica" é a base da estrutura do projeto ERP. El
 
 - *Segurança*: O controle de acesso e a autenticação são implementados para garantir a segurança do aplicativo.
 
-*5. Desafios Potenciais:*
 
-- *Complexidade Crescente*: À medida que o projeto cresce, a complexidade pode aumentar, tornando a manutenção mais desafiadora.
+### Lógica
 
-- *Desempenho*: Muitas inclusões de arquivos e solicitações AJAX podem afetar o desempenho, tornando o aplicativo mais lento.
+*Lógica do Projeto ERP - Documentação Técnica*
 
-- *Curva de Aprendizado*: A estrutura pode ter uma curva de aprendizado para novos desenvolvedores que entram no projeto.
+*1. Fluxo Inicial:*
 
-- *Dependência de JavaScript*: A funcionalidade do aplicativo depende fortemente do JavaScript, o que pode ser um problema se o usuário desativar o JavaScript no navegador.
+O sistema ERP segue um fluxo inicial a partir do arquivo `index.php`, que é o ponto de entrada principal do aplicativo. O fluxo é o seguinte:
 
+- Quando o usuário não fez login, o `index.php` verifica e chama a página de login, que está localizada em `public/pages/login.php`. O acesso direto à página é evitado, e a inclusão da página é realizada via PHP (`include`).
 
+*2. Página de Login:*
+
+- A página de login apresenta um formulário onde o usuário fornece suas credenciais (como nome de usuário e senha).
+- O JavaScript pode ser usado para validar as entradas do usuário e enviar uma solicitação AJAX para o servidor.
+- No lado do servidor, a lógica de login verifica as credenciais, autentica o usuário e cria uma sessão ou token de autenticação.
+- Após o login bem-sucedido, o usuário é redirecionado para a página inicial.
+
+*3. Página Inicial (Home):*
+
+- A página inicial (`public/pages/home.php`) é a primeira página após o login.
+- Ela contém chamadas AJAX em JavaScript para incluir o menu lateral e o topo da página.
+- O menu lateral lista todas as rotas das páginas, mas o acesso direto a elas é desencorajado. Em vez disso, o menu envia uma solicitação GET para o `index.php`, indicando a página desejada.
+- O arquivo `index.php` chama a classe `VerificaPages` localizada em `app/classes/VerificaPages.php` para determinar se a página solicitada existe.
+
+*4. Verificação e Montagem de Páginas:*
+
+- A classe `VerificaPages` é responsável por verificar a existência da página e fornecer informações, como cores, título e conteúdo da página.
+- O `index.php` lê as informações retornadas pela classe e monta a página para o cliente.
+- Os arquivos JavaScript em `public/js` são responsáveis por manipulações no DOM e na interface do usuário à medida que o usuário interage com a página.
+
+*5. Solicitações da API:*
+
+- Os dados são recebidos via API. Uma classe chamada `RequisicoesAPI` é responsável por tratar todas as solicitações de outras classes e arquivos.
+- Ela retorna os resultados obtidos após processar as solicitações.
+- A classe `VerificaPages` é responsável por páginas que exibem tabelas com dados obtidos da API.
+
+*6. Acesso a Novas Páginas:*
+
+- Ao acessar uma nova página, uma solicitação AJAX é feita ao arquivo `tabelas.php`, localizado em `app/controles/`.
+- O arquivo `tabelas.php` faz uma solicitação à classe `RequisicoesAPI`.
+- Após o sucesso da solicitação, `tabelas.php` retorna os resultados para a solicitação AJAX, que os apresenta na tela.
+
+*7. Elementos da Tela:*
+
+- Formulários, modais, collapses e outros elementos da interface são requisitados pela classe `VerificaPages`.
+- A classe procura pelos elementos na pasta `includes`, que está dentro do diretório `app`.
+- Se o arquivo for encontrado, a classe retorna o resultado para a exibição na tela.
 
 
 
