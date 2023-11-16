@@ -1,7 +1,7 @@
 ![EMAUTO Web](https://www.emsoft.inf.br/wp-content/uploads/2018/08/logo_horizontal_160x40.png)
 # Documentação EMAutoWeb
 
-## Aplicação das tecnologias e linguagens utilizadas
+## 1. Aplicação das tecnologias e linguagens utilizadas
 
 Este documento técnico fornece uma visão geral do sistema desenvolvido, descrevendo as linguagens de programação, tecnologias e bibliotecas utilizadas. O sistema foi construído utilizando PHP e JavaScript como linguagens primárias, com HTML5 e CSS3 empregados para marcação de texto e estilização, respectivamente.
 
