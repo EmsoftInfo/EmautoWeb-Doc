@@ -37,7 +37,7 @@ Qualquer um dos programas acima são suficientes para a utilização do PHP e Ap
 
 Além disso, para o funcionamento do sistema, são necessárias as configurações do PHP para rodar com os seguintes módulos:
 
-- CURL
+- cURL
 - OpenSSL
 
 Esses módulos devem estar instalados; caso contrário, a aplicação não funcionará. Para realizar a instalação, acesse a página oficial php.net
