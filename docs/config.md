@@ -26,6 +26,23 @@ Certifique-se de que o PHP 8.2 esteja instalado e configurado em sua máquina. V
 
 Certifique-se de que você esteja usando um navegador da web atualizado que ofereça suporte ao ECMAScript 6 (ES6), uma versão avançada do JavaScript. A maioria dos navegadores modernos, como Google Chrome, Mozilla Firefox, Microsoft Edge e outros, oferece suporte ao ECMAScript 6.
 
+### Alternativas a instação manual do PHP e Apache
+
+1. Laragon
+2. XAMPP
+3. WAMPP
+4. EasyPHP
+
+Qualquer um dos programas acima são suficientes para a utilização do PHP e Apache, os quais são configurados automaticamente. No entanto, o arquivo de configuração PHP.ini pode estar configurado para desenvolvimento; portanto, é necessário substituir este arquivo pela versão de produção enviada juntamente com o sistema para instalação.
+
+Além disso, para o funcionamento do sistema, são necessárias as configurações do PHP para rodar com os seguintes módulos:
+
+- CURL
+- OpenSSL
+
+Esses módulos devem estar instalados; caso contrário, a aplicação não funcionará. Para realizar a instalação, acesse
+
+
 ### Verificação da Configuração
 
 Para verificar se o ambiente foi configurado corretamente, siga os passos a seguir:
