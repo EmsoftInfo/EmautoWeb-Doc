@@ -40,7 +40,7 @@ Além disso, para o funcionamento do sistema, são necessárias as configuraçõ
 - CURL
 - OpenSSL
 
-Esses módulos devem estar instalados; caso contrário, a aplicação não funcionará. Para realizar a instalação, acesse
+Esses módulos devem estar instalados; caso contrário, a aplicação não funcionará. Para realizar a instalação, acesse a página oficial php.net
 
 
 ### Verificação da Configuração
