@@ -8,7 +8,7 @@ As funcionalidades nativas do sistema EMAutoWeb permitem a criação de conteúd
 
 ### Emauto_select
 
-A funcionalidade `Emauto_select` permite a unificação de options repetidos dentro de um select. É útil quando o select obtém dados do servidor onde o valor traseiro pode ser igual ao que já está na listagem, permitindo a unificação sem comprometer a integridade dos dados.
+A funcionalidade `Emauto_select` permite a unificação de options repetidos dentro de um select. É útil quando o select obtém dados do servidor onde o valor trazido pode ser igual ao que já está na listagem, permitindo a unificação sem comprometer a integridade dos dados.
 
 Exemplo de Uso:
 ```html
@@ -28,3 +28,17 @@ Exemplo de Uso:
 <ul emauto_datalist="fornecedor"></ul>
 ```
 
+
+### Required
+
+Ao utilizar o AJAX para o envio de requisições ao servidor, pode haver situações em que os inputs com atributos `required` ou regras nos seus valores não são validados corretamente. Nesse contexto, o sistema possui uma forma nativa de validação de dados.
+
+O sistema emprega a validação dos dados antes do envio ao servidor. Para tornar um campo obrigatório durante o preenchimento, é utilizado o atributo `required`, da mesma forma como em qualquer outro elemento HTML presente na web.
+
+O sistema realiza a validação para garantir que os dados obrigatórios tenham sido preenchidos antes do envio ao servidor. Isso permite uma verificação prévia dos campos, assegurando que informações cruciais estejam presentes antes da submissão da requisição AJAX.
+
+Exemplo de Uso:
+```html
+<input type="text" required>
+
+```
