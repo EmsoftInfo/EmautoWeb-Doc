@@ -15,6 +15,8 @@ Exemplo de Uso:
 <select emauto_select>
     <option value=""></option>
 </select>
+```
+
 
 ### Datalist
 
@@ -24,5 +26,5 @@ Exemplo de Uso:
 ```html
 <input type="text" emauto_datalist="fornecedor">
 <ul emauto_datalist="fornecedor"></ul>
-
+```
 
