@@ -55,7 +55,7 @@ A função em PHP `GeraSelect()` é responsável por buscar os dados no servidor
 ```html
 <select class="form-control" id="fiscal" emauto_select>
     <option selected value=""></option>
-    ```php
+```php
     <?php echo GeraSelect("FormasDePagamentoFiscal", "Descricao", "ID"); ?>
-    ```
+  
 </select>
