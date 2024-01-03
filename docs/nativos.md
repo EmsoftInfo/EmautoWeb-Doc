@@ -50,7 +50,7 @@ A função em PHP `GeraSelect()` é responsável por buscar os dados no servidor
 
 É importante notar que, para a construção do `<select>`, o atributo `selected` do `<option>` precisa estar fora do escopo da função para possibilitar manipulações posteriores. Além disso, recomenda-se o uso do atributo `emauto_select` em conjunto com essa função para evitar a repetição dos dados, mantendo o `<option selected>` fora do escopo da função.
 
-### Exemplo de Utilização:
+Exemplo de Utilização:
 
 ```php
 <select class="form-control" id="fiscal" emauto_select>
@@ -58,3 +58,54 @@ A função em PHP `GeraSelect()` é responsável por buscar os dados no servidor
     <?php echo GeraSelect("FormasDePagamentoFiscal", "Descricao", "ID"); ?>
   
 </select>
+```
+
+
+### Edits
+
+A função `VerificaSePaginaEdits` é responsável por verificar se a página atual corresponde à página de edição e habilita funções ou componentes específicos para esta condição. Esse recurso é especialmente útil quando um componente é reutilizado em várias páginas, como um formulário que é utilizado tanto para cadastro quanto para edição. No contexto de edição, podem ser necessárias funcionalidades adicionais que não estão presentes na página de cadastro.
+
+O retorno desta função é um valor booleano: 
+- Retorna `1` quando a página atual está no modo de edição.
+- Retorna `0` quando não está no modo de edição.
+
+ Exemplo de Utilização em JavaScript:
+```javascript
+<script>
+import { VerificaSePaginaEdits } from '../js';
+
+if (VerificaSePaginaEdits() == 1) {
+    // Habilitar funcionalidades específicas para a página de edição
+    // Coloque o código correspondente aqui
+} else {
+    // Tratar o caso em que não é uma página de edição (opcional)
+}
+</script>
+```
+
+
+### Máscaras 
+
+As máscaras são aplicadas utilizando a biblioteca jQuery Mask, a qual é organizada em microfunções para facilitar a organização e manutenção do código.
+
+Para utilizar as máscaras disponíveis, siga os seguintes passos:
+
+- Passo 1: Definição dos Elementos HTML
+
+No seu código HTML, defina os elementos nos quais deseja aplicar as máscaras. Utilize o atributo `emauto_mascara` para especificar o tipo de máscara desejada. Por exemplo:
+
+```html
+<input type="text" name="Comissao" emauto_mascara="Porcentagem">
+<input type="text" name="CEP" emauto_mascara="Cep">
+```
+
+- Passo 2: Importação das Funções de Máscara
+
+Realize a importação das funções de máscara desejadas no seu arquivo JavaScript para habilitar essas funcionalidades. Por exemplo:
+
+```javascript
+<script>
+import { MascaraCEP, MascaraPorcentagem } from '../js';
+// Importe as funções de máscara necessárias
+</script>
+```
