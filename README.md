@@ -26,7 +26,7 @@ O EMAutoWeb tem como objetivo simplificar e otimizar a gestão de negócios no s
 ### Área técnica
 
 [3. Arquitetura](docs/system/system.md)<br>
-[3. Padrões de projetos](docs/system/padrao.md)<br>
+[3. Detalhando o padrão de projeto](docs/system/padrao.md)<br>
 [4. Tecnologias](docs/system/tecnologias.md)<br>
 [5. Funções de criação de conteúdo](docs/system/funcoes-nativas-construcao.md)<br>
 [6. Detalhando funções gerais do sistema - PHP](docs/system/funcoes-php.md)<br>
