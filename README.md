@@ -29,6 +29,7 @@ O EMAutoWeb tem como objetivo simplificar e otimizar a gestão de negócios no s
 [4. Tecnologias](docs/system/tecnologias.md)<br>
 [5. Funções de criação de conteúdo](docs/system/funcoes-nativas-construcao.md)<br>
 [6. Detalhando funções gerais do sistema - PHP](docs/system/funcoes-php.md)<br>
+[7. Detalhando o JavaScript e suas funções](docs/system/js.md)<br>
 
 
 
