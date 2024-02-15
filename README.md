@@ -20,7 +20,7 @@ O EMAutoWeb tem como objetivo simplificar e otimizar a gestão de negócios no s
 
 [1. Instalação e Configuração](docs/config/config.md)<br>
 [1.1. Atualização](docs/instalacao/atualizacao.md)<br>
-[2. Utilizando o sistema](docs/uso/uso.md)<br>
+[2. Primeiro acesso e Possíveis correções](docs/uso/uso.md)<br>
 
 
 ### Área técnica
