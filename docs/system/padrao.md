@@ -35,35 +35,35 @@ O sistema web possui a seguinte estrutura de arquivos e diretórios:
 
 ### Estrutura de Diretórios
 
-sistema-web/
-│
-├── index.php
-│
-├── system/
-│ ├── app/
-│ │ ├── classes/
-│ │ ├── config/
-│ │ │ ├── funcoesGlobais.php
-│ │ │ ├── config.php
-│ │ │ └── palavras.php
-│ │ ├── controles/
-│ │ ├── includes/
-│ │ │ ├── AcoesPages/
-│ │ │ ├── FiltrosPages/
-│ │ │ ├── FormPages/
-│ │ │ ├── ModelosExtras/
-│ │ │ ├── ModulosExtras/
-│ │ │ └── TabelasPages/
-│ │ └── temp/
-│ │
-│ └── public/
-│ ├── CSS/
-│ ├── midia/
-│ ├── pages/
-│ ├── template/
-│ └── JS/
-│ ├── Acionadores/
-│ └── externos/
+sistema-web/<br>
+│<br>
+├── index.php<br>
+│<br>
+├── system/<br>
+│ ├── app/<br>
+│ │ ├── classes/<br>
+│ │ ├── config/<br>
+│ │ │ ├── funcoesGlobais.php<br>
+│ │ │ ├── config.php<br>
+│ │ │ └── palavras.php<br>
+│ │ ├── controles/<br>
+│ │ ├── includes/<br>
+│ │ │ ├── AcoesPages/<br>
+│ │ │ ├── FiltrosPages/<br>
+│ │ │ ├── FormPages/<br>
+│ │ │ ├── ModelosExtras/<br>
+│ │ │ ├── ModulosExtras/<br>
+│ │ │ └── TabelasPages/<br>
+│ │ └── temp/<br>
+│ │<br>
+│ └── public/<br>
+│ ├── CSS/<br>
+│ ├── midia/<br>
+│ ├── pages/<br>
+│ ├── template/<br>
+│ └── JS/<br>
+│ ├── Acionadores/<br>
+│ └── externos/<br>
 
 
 
