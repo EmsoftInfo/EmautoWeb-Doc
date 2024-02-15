@@ -16,10 +16,19 @@ Com a adaptação para a versão web, o EMAutoWeb está pronto para revolucionar
 O EMAutoWeb tem como objetivo simplificar e otimizar a gestão de negócios no setor de autopeças por meio de uma plataforma web acessível, proporcionando aos usuários uma maneira eficiente de gerenciar estoque, vendas, finanças e outras operações essenciais.
 
 
-### Escolha uma opção
+### Instalação e Configuração
 
 [1. Instalação](docs/instalacao/instalacao.md)<br>
-[2. Atualização](docs/instalacao/atualizacao.md)<br>
+[1.1. Atualização](docs/instalacao/atualizacao.md)<br>
+[2. Configuração](docs/config/config.md)<br>
+[3. Utilizando o sistema](docs/uso/uso.md)<br>
 
+
+### Área técnica
+
+[4. Arquitetura](docs/system/system.md)<br>
+[5. Tecnologias](docs/system/tecnologias.md)<br>
+[6. Funções de Criação de Conteúdo](docs/system/funcoes-nativas-construcao.md)<br>
+[7. Detalhando funções gerais do sistema - PHP](docs/system/funcoes-php.md)
 
 
