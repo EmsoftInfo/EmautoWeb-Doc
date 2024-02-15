@@ -5,7 +5,7 @@
 ## Detalhando as funções PHP
 
 
-### FiltroURL
+### filtroURL
 
 Função responsável por filtrar URLs, removendo possíveis comandos maliciosos, mas preservando caracteres importantes para URLs.
 
@@ -17,7 +17,7 @@ $var = FiltroURL("@urlaqui#");
 ?>
 ```
 
-### FiltroHTML
+### filtroHTML
 A função `FiltroHTML` é responsável por filtrar elementos HTML, removendo comandos maliciosos e garantindo a segurança contra possíveis vulnerabilidades.
 
 Exemplo de uso
@@ -28,7 +28,7 @@ $var = FiltroHTML("<a href='test'>Test</a>");
 ?>
 ```
 
-### ChaveURL
+### chaveURL
 Função que converte os parâmetros presentes na URL em base64.
 
 Exemplo de uso
@@ -39,7 +39,7 @@ $var = ChaveURL("01.00.00");
 ?>
 ```
 
-### Filtro
+### filtro
 Esta função é amplamente utilizada em várias ações no sistema para sanitizar comandos ou caracteres maliciosos.
 
 Exemplo de uso
@@ -50,7 +50,7 @@ $var = Filtro(" UNION textoaqui ' SELECT");
 ?>
 ```
 
-### FiltroNUM 
+### filtroNUM 
 A função `FiltroNUM` é utilizada para sanitizar variáveis, removendo todos os caracteres que não são números inteiros.
 
 Exemplo de uso
@@ -60,3 +60,14 @@ $var = FiltroNUM("Teste05044ff");
 // Saída: 05044
 ?>
 ```
+
+### verificaLogado 
+A função `verificaLogado` é utilizada para verificar se existe um usuário logado, para exibir e realizar as solicitações posteriores. Se não existir usuário logado, a página de login é requisitada
+
+Exemplo de uso
+```php
+<?php
+$var = verificaLogado("$_SESSION['chave']","$_SESSION['usuario']");
+?>
+```
+
