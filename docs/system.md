@@ -4,6 +4,18 @@
 
 
 
+### Características
+<pre> 
+Linguagens de Programação Utilizadas: PHP e JavaScript
+Bibliotecas e Frameworks: Jquey, BootStrap e Ionicons
+
+Requisitos para utilização:
+Apache HTTP Server
+PHP 8.1+
+Navegadores com suporte ao ECMAScript 6
+</pre>
+
+
 ### Estrutura de Pastas:
 
 Estrutura de Pastas do Projeto ERP*

@@ -16,21 +16,10 @@ Com a adaptação para a versão web, o EMAutoWeb está pronto para revolucionar
 O EMAutoWeb tem como objetivo simplificar e otimizar a gestão de negócios no setor de autopeças por meio de uma plataforma web acessível, proporcionando aos usuários uma maneira eficiente de gerenciar estoque, vendas, finanças e outras operações essenciais.
 
 
-### Características
-<pre> 
-Linguagens de Programação Utilizadas: PHP e JavaScript
-Bibliotecas e Frameworks: Jquey, BootStrap e Ionicons
-
-Requisitos para utilização:
-Apache HTTP Server
-PHP 8.1+
-Navegadores com suporte ao ECMAScript 6
-</pre>
-
-
 ### Escolha uma opção
 
-[1. Instalação](docs/instalacao/instalacao.md)
-[2. Atualização](docs/instalacao/atualizacao.md)
+[1. Instalação](docs/instalacao/instalacao.md)<br>
+[2. Atualização](docs/instalacao/atualizacao.md)<br>
+
 
 
