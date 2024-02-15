@@ -18,17 +18,18 @@ O EMAutoWeb tem como objetivo simplificar e otimizar a gestão de negócios no s
 
 ### Instalação e Configuração
 
-[1. Instalação](docs/instalacao/instalacao.md)<br>
+[1. Instalação e Configuração](docs/config/config.md)<br>
 [1.1. Atualização](docs/instalacao/atualizacao.md)<br>
-[2. Configuração](docs/config/config.md)<br>
-[3. Utilizando o sistema](docs/uso/uso.md)<br>
+[2. Utilizando o sistema](docs/uso/uso.md)<br>
 
 
 ### Área técnica
 
-[4. Arquitetura](docs/system/system.md)<br>
-[5. Tecnologias](docs/system/tecnologias.md)<br>
-[6. Funções de Criação de Conteúdo](docs/system/funcoes-nativas-construcao.md)<br>
-[7. Detalhando funções gerais do sistema - PHP](docs/system/funcoes-php.md)
+[3. Arquitetura](docs/system/system.md)<br>
+[4. Tecnologias](docs/system/tecnologias.md)<br>
+[5. Funções de criação de conteúdo](docs/system/funcoes-nativas-construcao.md)<br>
+[6. Detalhando funções gerais do sistema - PHP](docs/system/funcoes-php.md)<br>
+
+
 
 
